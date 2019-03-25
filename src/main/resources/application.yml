@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+#      ddl-auto: create-drop
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: validate
+    properties.hibernate.globally_quoted_identifiers: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/sabd
+    username: cosmin
+    password: cosmin
+
